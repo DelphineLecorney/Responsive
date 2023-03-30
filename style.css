@@ -1,0 +1,41 @@
+/* viewport width smaller than 480px*/
+@media screen and (max-width: 550px) {    
+    body {
+        background-color: red;
+    }
+}
+
+/* viewport width between 480px and 1023px */
+@media screen and (min-width: 551px) and (max-width: 1023px) {
+    body {
+        background-color: green;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .small {
+        flex-basis: 66.66%;
+    }
+    .medium {
+        flex-basis: 33.33%;
+    }
+    .large {
+        flex-basis: 100%;
+    }
+}
+
+/* viewport width larger than or equal to 1024px */
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: blue;
+        display: flex;
+      }
+    .small {
+        flex-direction: row;
+      }
+    .medium {
+        flex-direction: row;
+    }
+    .large {
+        flex-direction: row;
+      }
+}
